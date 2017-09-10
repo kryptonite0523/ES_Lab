@@ -22,7 +22,6 @@ int  main(void)
 		// Check if the peripheral access is enabled.
     while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF))
     {
-    
 		}
     
 		
@@ -39,7 +38,7 @@ int  main(void)
 		
 		//While switch 0 is being held down do this skim through the colors...(atleast that
 		// is the plan.
-		while(GPIO_PIN_0 == 0xF)
+		while(GPIOPinRead (GPIO_PORTF_BASE, GPIO_PIN_0) == 0x0F) 
     {
 				//BLINK RED LED
         // Turn on the LED.
