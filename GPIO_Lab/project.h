@@ -1,6 +1,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include "inc/hw_memmap.h"
+#include "inc/tm4c1294ncpdt.h"
 
 #include "driverlib/adc.h"
 #include "driverlib/aes.h"
