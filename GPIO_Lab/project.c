@@ -1,8 +1,4 @@
 #include "project.h"
-#include <stdio.h>
-#include <stdint.h>
-#include "GPIO_Enable.h"
-#include "LED_SKIM.h"
 
 
 #ifdef DEBUG
@@ -12,13 +8,22 @@ __error__(char *pcFilename, uint32_t ui32Line)
 }
 #endif
 
-
 int  main(void)
 {
 	  volatile uint32_t ui32Loop;
-		
-   GPIO_Enable();
 	
-	 LED_SKIM ();
+	//Enables ports
+	GPIO_INIT();
+	
+	//While switch 0 is being held down do this skim through both LEDs alternatively...(atleast that
+	// is the plan.
+	
+	while (1)
+	{
+	//Turns on and off LEDs in sequence	
+	 Phasor_Laser();
+		
+	}
+	
 	
 }
