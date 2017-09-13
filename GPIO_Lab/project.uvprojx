@@ -423,6 +423,11 @@
               <FileType>1</FileType>
               <FilePath>.\src\GPIO_Enable.c</FilePath>
             </File>
+            <File>
+              <FileName>LED_SKIM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\LED_SKIM.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
