@@ -40,3 +40,6 @@
 #include "driverlib/udma.h"
 #include "driverlib/usb.h"
 #include "driverlib/watchdog.h"
+
+#include "src/GPIO_INIT.h"
+#include "src/Phasor_Laser.h"
