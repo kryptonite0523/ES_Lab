@@ -419,14 +419,14 @@
               <FilePath>.\src\example.c</FilePath>
             </File>
             <File>
-              <FileName>GPIO_Enable.c</FileName>
+              <FileName>Phasor_Laser.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\GPIO_Enable.c</FilePath>
+              <FilePath>.\src\Phasor_Laser.c</FilePath>
             </File>
             <File>
-              <FileName>LED_SKIM.c</FileName>
+              <FileName>GPIO_INIT.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\LED_SKIM.c</FilePath>
+              <FilePath>.\src\GPIO_INIT.c</FilePath>
             </File>
           </Files>
         </Group>
