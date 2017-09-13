@@ -15,10 +15,14 @@ __error__(char *pcFilename, uint32_t ui32Line)
 int  main(void)
 {
     volatile uint32_t ui32Loop;
+		int delay= 800000;
+	
 	
     // Enable the GPIO port used for the on-board LED.
 		SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
-    
+	 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION);
+		
+	  
 		// Check if the peripheral access is enabled.
     while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF))
     {
@@ -42,53 +46,41 @@ int  main(void)
     {
 				//BLINK RED LED
         // Turn on the LED.
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0xF);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0xFF);
 
         // Delay for a bit.
-        for(ui32Loop = 0; ui32Loop < 800000; ui32Loop++)
-        {
-        }
+        SysCtlDelay(delay);
 
         // Turn off the LED.
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0x0);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1, 0x00);
 
         // Delay for a bit.
-        for(ui32Loop = 0; ui32Loop < 80000; ui32Loop++)
-        {
-        }
+        SysCtlDelay(delay);
 				
 				//BLINK BLUE LED
 				// Turn on the LED.
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0xF);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0xFF);
 
         // Delay for a bit.
-        for(ui32Loop = 0; ui32Loop < 800000; ui32Loop++)
-        {
-        }
+       SysCtlDelay(delay);
 
         // Turn off the LED.
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0x0);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 0x00);
 
         // Delay for a bit.
-        for(ui32Loop = 0; ui32Loop < 80000; ui32Loop++)
-        {
-        }
+        SysCtlDelay(delay);
 				
 					//BLINK GREEN LED
 				// Turn on the LED.
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0xF);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0xFF);
 
         // Delay for a bit.
-        for(ui32Loop = 0; ui32Loop < 800000; ui32Loop++)
-        {
-        }
+        SysCtlDelay(delay);
 
         // Turn off the LED.
-        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0x0);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0x00);
 
         // Delay for a bit.
-        for(ui32Loop = 0; ui32Loop < 80000; ui32Loop++)
-        {
-        }
+        SysCtlDelay(delay);
     }
 }
