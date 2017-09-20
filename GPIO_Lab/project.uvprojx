@@ -423,6 +423,26 @@
               <FileType>1</FileType>
               <FilePath>.\src\Phasor_Laser.c</FilePath>
             </File>
+            <File>
+              <FileName>Switch_Init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Switch_Init.c</FilePath>
+            </File>
+            <File>
+              <FileName>Just_A_Switchin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Just_A_Switchin.c</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_helper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Uart_helper.c</FilePath>
+            </File>
+            <File>
+              <FileName>Terminal_Switch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Terminal_Switch.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
