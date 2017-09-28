@@ -13,9 +13,7 @@ void GPIO_INIT (void)
 	  
 		// Check if the peripheral access is enabled.
     while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF))
-    {
-			
-		}
+    {}
     
 		
 		// Enable the GPIO pin for the LED (PN1,PN2,PN3, PN4).  Set the direction as output, and
