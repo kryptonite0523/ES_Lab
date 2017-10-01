@@ -428,6 +428,21 @@
               <FileType>1</FileType>
               <FilePath>.\src\GPIO_INIT.c</FilePath>
             </File>
+            <File>
+              <FileName>example.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\example.h</FilePath>
+            </File>
+            <File>
+              <FileName>GPIO_INIT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\GPIO_INIT.h</FilePath>
+            </File>
+            <File>
+              <FileName>Phasor_Laser.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\Phasor_Laser.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
