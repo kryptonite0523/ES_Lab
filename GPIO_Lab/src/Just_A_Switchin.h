@@ -7,4 +7,4 @@
 #include "hw_gpio.h"
 #include "hw_types.h"
 
-void Phasor_Laser();
+void Get_Switchy();

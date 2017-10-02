@@ -1,7 +1,6 @@
 #include "project.h"
 
 
-
 #ifdef DEBUG
 void
 __error__(char *pcFilename, uint32_t ui32Line)
@@ -12,11 +11,15 @@ __error__(char *pcFilename, uint32_t ui32Line)
 int  main(void)
 {
     volatile uint32_t ui32Loop;
-
+		uint8_t a;
 		GPIO_INIT();
-		
-		while(1)
+		Switch_Init();
+		int32_t i,n;
+		UART_Init();              // initialize UART
+		int b = Decision_Maker();
+	
+ 	while(1)
 		{
-			Phasor_Laser();
+			Phasor_Laser(b);
 		}
 }
