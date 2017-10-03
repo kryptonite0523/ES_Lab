@@ -18,7 +18,7 @@ int  main(void)
 	Switch_Init();
 	int32_t i,n;
 	UART_Init();
-	//int b = Decision_Maker();
+	int b = Decision_Maker();
 	
 	//While switch 0 is being held down do this skim through both LEDs alternatively...(atleast that
 	// is the plan.

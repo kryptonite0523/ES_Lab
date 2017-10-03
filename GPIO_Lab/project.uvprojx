@@ -483,6 +483,16 @@
               <FileType>5</FileType>
               <FilePath>.\src\Uart_helper.h</FilePath>
             </File>
+            <File>
+              <FileName>Systick_helper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Systick_helper.c</FilePath>
+            </File>
+            <File>
+              <FileName>Systick_helper.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\Systick_helper.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
