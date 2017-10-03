@@ -1,5 +1,6 @@
 #include <stdbool.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "sysctl.h"
 #include "hw_memmap.h"
 #include "gpio.h"
@@ -7,4 +8,4 @@
 #include "hw_gpio.h"
 #include "hw_types.h"
 
-void GPIO_INIT(void);
+int Decision_Maker();

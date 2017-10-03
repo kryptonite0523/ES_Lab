@@ -43,3 +43,7 @@
 
 #include "src/GPIO_INIT.h"
 #include "src/Phasor_Laser.h"
+#include "src/Switch_Init.h"
+#include "src/Just_A_Switchin.h"
+#include "src/Uart_helper.h"
+#include "src/Terminal_Switch.h"

@@ -7,5 +7,4 @@
 #include "hw_gpio.h"
 #include "hw_types.h"
 
-void GPIO_INIT(void);
-void Phasor_Laser(void);
+void Phasor_Laser();

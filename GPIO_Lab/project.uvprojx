@@ -428,6 +428,61 @@
               <FileType>1</FileType>
               <FilePath>.\src\GPIO_INIT.c</FilePath>
             </File>
+            <File>
+              <FileName>GPIO_INIT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\GPIO_INIT.h</FilePath>
+            </File>
+            <File>
+              <FileName>Phasor_Laser.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\Phasor_Laser.h</FilePath>
+            </File>
+            <File>
+              <FileName>Just_A_Switchin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Just_A_Switchin.c</FilePath>
+            </File>
+            <File>
+              <FileName>Switch_Init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Switch_Init.c</FilePath>
+            </File>
+            <File>
+              <FileName>Terminal_Switch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Terminal_Switch.c</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_helper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Uart_helper.c</FilePath>
+            </File>
+            <File>
+              <FileName>example.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\example.h</FilePath>
+            </File>
+            <File>
+              <FileName>Just_A_Switchin.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\Just_A_Switchin.h</FilePath>
+            </File>
+            <File>
+              <FileName>Switch_Init.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\Switch_Init.h</FilePath>
+            </File>
+            <File>
+              <FileName>Terminal_Switch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\Terminal_Switch.h</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_helper.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\Uart_helper.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
