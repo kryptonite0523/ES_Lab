@@ -4,10 +4,10 @@
 void Phasor_Laser(b)
 {
 	int ddelay;
-	int delay1=450000; 
-	int delay2=150000;
+	int delay1=450000; // Long delay
+	int delay2=150000; // Short delay
 
-			if(b==0x31)
+			if(b==0x31)		 // Comparing options to input and making correct selection
 			{
 				ddelay=delay1;
 			}
@@ -15,6 +15,8 @@ void Phasor_Laser(b)
 			{
 				ddelay=delay2;
 			}
+			
+			// Cool light display delaying and what not.. 
 			
 			GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0xFF);
 		
