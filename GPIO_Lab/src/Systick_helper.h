@@ -6,7 +6,4 @@
 #include "../inc/tm4c1294ncpdt.h"
 #include "hw_gpio.h"
 #include "hw_types.h"
-
-
-void Get_Switchy();
-
+#include "hw_nvic.h"

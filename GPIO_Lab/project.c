@@ -10,7 +10,7 @@ __error__(char *pcFilename, uint32_t ui32Line)
 
 int  main(void)
 {
-    volatile uint32_t ui32Loop;
+  volatile uint32_t ui32Loop;
 		uint8_t a;
 		GPIO_INIT();
 		Switch_Init();

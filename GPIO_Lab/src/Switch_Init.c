@@ -2,6 +2,7 @@
 
 void Switch_Init(void)
 {
+
 	SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R8;
                                    // allow time for clock to stabilize
   while((SYSCTL_PRGPIO_R&SYSCTL_PRGPIO_R8) == 0){};
