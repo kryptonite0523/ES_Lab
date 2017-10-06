@@ -27,4 +27,3 @@ void GPIO_INIT(void)
     //Enable the GPIO Pin for the switches (PJ0,PJ1). Set the direction as an input?
 		GPIOPinTypeGPIOInput (GPIO_PORTJ_BASE, GPIO_PIN_0);
 		GPIOPinTypeGPIOInput (GPIO_PORTJ_BASE, GPIO_PIN_1);
-	}
