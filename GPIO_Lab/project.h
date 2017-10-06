@@ -1,5 +1,6 @@
 #include <stdbool.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "inc/hw_memmap.h"
 #include "inc/tm4c1294ncpdt.h"
 
@@ -48,3 +49,4 @@
 #include "src/Uart_helper.h"
 #include "src/Terminal_Switch.h"
 #include "src/Systick_helper.h"
+

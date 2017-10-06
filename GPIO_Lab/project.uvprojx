@@ -336,7 +336,9 @@
               <MiscControls>--c99</MiscControls>
               <Define>rvmdk PART_TM4C123GH6PM TARGET_IS_TM4C123_RB1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..;.\src;.\inc;.\driverlib</IncludePath>
+
+              <IncludePath>..\..;.\inc;.\src;.\driverlib</IncludePath>
+
             </VariousControls>
           </Cads>
           <Aads>
@@ -414,9 +416,34 @@
           <GroupName>src</GroupName>
           <Files>
             <File>
-              <FileName>example.c</FileName>
+              <FileName>GPIO_INIT.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\example.c</FilePath>
+              <FilePath>.\src\GPIO_INIT.c</FilePath>
+            </File>
+            <File>
+              <FileName>Phasor_Laser.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Phasor_Laser.c</FilePath>
+            </File>
+            <File>
+              <FileName>Switch_Init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Switch_Init.c</FilePath>
+            </File>
+            <File>
+              <FileName>Just_A_Switchin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Just_A_Switchin.c</FilePath>
+            </File>
+            <File>
+              <FileName>Uart_helper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Uart_helper.c</FilePath>
+            </File>
+            <File>
+              <FileName>Terminal_Switch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\Terminal_Switch.c</FilePath>
             </File>
             <File>
               <FileName>Phasor_Laser.c</FileName>
