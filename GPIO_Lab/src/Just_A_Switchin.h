@@ -7,6 +7,5 @@
 #include "hw_gpio.h"
 #include "hw_types.h"
 
-
 void Get_Switchy();
 
