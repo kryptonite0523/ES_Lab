@@ -1,4 +1,10 @@
 #include "project.h"
+#include <stdint.h>
+#include <string.h>
+#include "inc/tm4c1294ncpdt.h"
+#include "inc/hw_timer.h"
+#include "inc/hw_gpio.h"
+#include "set.h"
 
 
 #ifdef DEBUG
@@ -10,24 +16,31 @@ __error__(char *pcFilename, uint32_t ui32Line)
 
 int  main(void)
 {
-	  volatile uint32_t ui32Loop;
+	  SYSCTL_RCGCTIMER_R = 0x3;               //enable clock (timers 0 and 1)
+		SYSCTL_RCGCGPIO_R |= 0x00000007;				//turn on clock for port A, B, and C
+		SYSCTL_RCGCUART_R |=SYSCTL_RCGCUART_R4	//turn on clock for UART 4
 	
-	//Enables ports
-	uint8_t a; 
-	GPIO_INIT();
-	Switch_Init();
-	int32_t i,n;
-	UART_Init();
-	int b = Decision_Maker();
+	//Initializing PLL for 80 MHz SYSCLLK
+	InitSys(4);
 	
-	//While switch 0 is being held down do this skim through both LEDs alternatively...(atleast that
-	// is the plan.
+	//Initializing matrix hardware level
+	InitMatrix();
 	
-	while (1)
+	//Initializing hardware for gaming purposes
+	InitGaming();
+	
+	//Initialzing UART
+	InitUART(521);
+	
+	//Enabling timer for LED matrix
+	TIMER0_CTL_R |= 0x1;
+	
+	//Enabling timer to drive game looping
+	TIMER1_CTL_R |=0x1;
+
+  //Main loooooop
+	while(1)
 	{
-	//Turns on and off LEDs in sequence	
-	 Phasor_Laser(b);
-		
 	}
-	
 }
+	
