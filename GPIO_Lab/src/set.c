@@ -2,10 +2,10 @@
 #include "inc/tm4c1294ncpdt.h"
 #include "set.h"
 
-//div value (the divider value for the PLL (4 = Sysdiv2 of 0x02 + Sysdiv3lsb or 0 = 0b100 = 80MHZ)
+//divide value (the divider value for the PLL (4 = Sysdiv2 of 0x02 + Sysdiv3lsb or 0 = 0b100 = 80MHZ)
 
 
-void InitSys(uint8_t div)
+void InitSys(uint8_t divide)
 	
 {
 	SYSCTL_RCC2_R |= 0X80000000;  //rcc2 Bit Used
@@ -14,7 +14,7 @@ void InitSys(uint8_t div)
 	SYSCTL_RCC2_R &= ~0x70; //MOSC configured
 	SYSCTL_RCC2_R &= ~0X2000; //pll ON 
 	SYSCTL_RCC2_R |= 0x40000000; //400 MHz Pll
-	SYSCTL_RCC2_R = (SYSCTL_RCC2_R & ~0x1FC00000) + (div<<22);
+	SYSCTL_RCC2_R = (SYSCTL_RCC2_R & ~0x1FC00000) + (divide<<22);
 	
 	//ppl lock (polling PLLris bit)
 	while ((SYSCTL_RIS_R & 0x40)==0);
